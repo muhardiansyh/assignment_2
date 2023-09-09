@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/portofolio.css">
+    <title>Portofolio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <button class="btn-responsive">Menu</button>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">MY INVENTORY</a></li>
+        </ul>
+    </nav>
+
+    <!-- Card -->
+    <div class="card">
+        <!-- [Card] Cell one -->
+        <div class="cell-one">
+            <div class="image-profile">
+                <img src="assets/img/person-2.png" alt="image profile photo">
+            </div>
+            <section class="section-one">
+                <h3 class="output">Nama Anda</h3>
+                <p class="output">Front End Designer</p>
+                <div class="btn">
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-resume">Resume</button>
+                </div>
+            </section>
+        </div>
+        
+        <!-- [Card] Cell two -->
+        <div class="cell-two">
+            <section class="section-two">
+                <ul>
+                    <li>Avaliability</li>
+                    <li>Usia</li>
+                    <li>Lokasi</li>
+                    <li>Pengalaman</li>
+                    <li>Email</li>
+                </ul>
+            </section>
+            <section class="section-three">
+                <ul>
+                    <li>
+                        <span>:&nbsp;</span><p class="output">Full Time</p>
+                    </li>
+                    <li>
+                        <span>:&nbsp;</span><p class="output">21</p>
+                    </li>
+                    <li>
+                        <span>:&nbsp;</span><p class="output">Jakarta, Indonesia</p>
+                    </li>
+                    <li>
+                        <span>:&nbsp;</span><p class="output">2 Tahun</p>
+                    </li>
+                    <li>
+                        <span>:&nbsp;</span><p class="output">email@gmail.com</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form-container">
+        <div>
+            <form>
+                <ul>
+                    <li>
+                        <label for="nama">Nama</label><br>
+                        <input type="text" id="nama" autocomplete="off" class="input"/>
+                    </li>
+                    <li>
+                        <label for="role">Role</label><br>
+                        <input type="text" id="role" autocomplete="off" class="input"/>
+                    </li>
+                    <li>
+                        <label for="availibility">Avaliability</label><br>
+                        <input type="text" id="availibility" autocomplete="off" class="input"/>
+                    </li>
+                    <li>
+                        <label for="age">Age</label><br>
+                        <input type="text" id="age" autocomplete="off" class="input"/>
+                    </li>
+                    <li>
+                        <label for="lokasi">Lokasi</label><br>
+                        <input type="text" id="lokasi" autocomplete="off" class="input"/>
+                    </li>
+                    <li>
+                        <label for="exp">Years Experience</label><br>
+                        <input type="text" id="exp" autocomplete="off" class="input"/>
+                    </li>
+                    <li>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" autocomplete="off" class="input"/>
+                    </li>
+                </ul>
+            </form>
+            <button class="btn-form" onclick="getValue();" type="submit">SUBMIT</button>
+        </div>
+    </div>
+    
+
+<script src="assets/js/portofolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: whitesmoke;
+}
+
+
+/*Navbar*/
+nav{
+    width: 100%;
+    height: 40px;
+    background: white;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+nav .btn-responsive{
+    display: none;
+}
+
+nav ul{
+    margin: 0px auto;
+    float: right;
+    padding-right: 10vw;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 5px;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 7px;
+    transition: .5s ease;
+}
+
+nav ul li:hover{
+    background: rgb(223, 223, 223);
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Card */
+.card{
+    margin: 20px 20px;
+    width: 90%;
+    border-radius: 10px;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.2);
+}
+
+/* [Card] Cell one */
+.cell-one{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card .image-profile{
+    margin: auto;
+} 
+
+.card .image-profile img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+/* Section one */
+.card .section-one{
+    margin-top: 25px;
+}
+
+.section-one p{
+    margin-top: 10px;
+}
+
+.section-one .btn{
+    margin-top: 30px;
+}
+
+.section-one .btn button{
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.btn .btn-edit{
+    background: white;
+    color: blue;
+    border: 2px solid blue;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+    width: 75px;
+}
+
+.btn .btn-edit:hover{
+    background: blue;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+.btn .btn-resume{
+    background: white;
+    color: green;
+    border: 2px solid green;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btn .btn-resume:hover{
+    background: green;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+
+/* [Card] Cell two */
+.cell-two{
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+
+/* Section two */
+.card .section-two{
+    margin: 20px 0px;
+}
+
+.section-two ul{
+    list-style-type: none;
+}
+
+.section-two ul li{
+    padding: 5px;
+}
+
+/* Section three */
+.card .section-three{
+    margin: 20px;
+}
+
+.section-three ul{
+    list-style-type: none;
+}
+
+.section-three ul li{
+    display: flex;
+    padding: 5px;
+}
+
+
+/* Form */
+.form-container{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: .5s ease;
+}
+
+.form-container > div{
+    overflow: hidden;
+}
+
+.active{
+    grid-template-rows: 1fr;
+}
+
+form{
+    overflow: hidden;
+    width: 90%;
+    height: auto;
+    margin: 5px 20px;
+    background: white;
+    display: grid;
+}
+
+form ul{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+form ul li{
+    padding-bottom: 10px;
+}
+
+form input[type=text]{
+    width: 100%;
+    padding: 0.3vw;
+    border: 2px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+
+form input[type=text]:focus{
+    border: 2px solid rgb(100, 100, 100)
+}
+
+.btn-form{
+    width: 90%;
+    height: auto;
+    margin: 2px 20px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.4vw;
+    background: green;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.btn-form:hover{
+    background: darkgreen;
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+
+@media (max-width:400px) and (min-width:321px){
+    body{
+        overflow-x: hidden;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    nav .btn-responsive{
+        display: block;
+        float: right;
+        clear: both;
+        margin: 5px 20px;
+        padding: 5px;
+        background: white;
+        border: 2px solid blue;
+        border-radius: 5px;
+        font-weight: bold;
+        color: blue;
+        transition: .5s ease;
+    }
+
+    nav button:hover{
+        background: blue;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 2px 2px 5px grey;
+    }
+
+    .cell-one{
+        place-items: center;
+        text-align: center;
+    }
+
+    .cell-two{
+        justify-content: center;
+        font-size: 15px;
+    }
+}
