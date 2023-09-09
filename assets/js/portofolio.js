@@ -6,6 +6,20 @@ let btnEdit = document.querySelector('.btn-edit');
 let formContainer = document.querySelector('.form-container');
 let btnForm = document.querySelector('.btn-form');
 
+const btnMobile = document.querySelector('.btn-responsive')
+const menuListMobile = document.querySelector('.menu-list');
+
+// --- tombol menu di mobile
+btnMobile.addEventListener('click', () => {
+    menuListMobile.classList.toggle('active');
+})
+
+document.addEventListener('click', (e) => {
+    const target = e.target.classList.contains('btn-responsive')
+    if(!target)menuListMobile.classList.remove('active')
+
+})
+
 // --- cek apakah sudah ada local storage di website nya
 for(let y = 0; y < input.length; y++){
     let valueCheck = localStorage.getItem(`data ${y}`)
