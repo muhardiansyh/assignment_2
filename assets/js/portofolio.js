@@ -53,3 +53,10 @@ input.forEach((el) => {
         if(e.key === "Enter") getValue();
     })
 })
+
+const clearBtn = document.querySelector('.delete');
+
+clearBtn.addEventListener('click', () => {
+    localStorage.clear();
+    location.reload();
+})

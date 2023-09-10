@@ -163,6 +163,30 @@ nav ul li a{
     padding: 5px;
 }
 
+.delete{
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    right: 0;
+    color: red;
+    margin-right: 155px;
+    cursor: pointer;
+}
+
+.delete i{
+    font-size: 20px;
+}
+
+.delete p{
+    position: absolute;
+    line-height: 25px;
+    margin-right: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 
 /* Form */
 .form-container{
@@ -289,5 +313,22 @@ form input[type=text]:focus{
     .cell-two{
         justify-content: center;
         font-size: 15px;
+    }
+
+    .delete{
+        justify-content: start;
+        top: 80px;
+        font-size: 12px;
+        left: 0;
+        margin-left: 35px;
+    }
+    
+    .delete i{
+        font-size: 18px;
+        
+    }
+
+    .delete p{
+        margin-left: 20px;
     }
 }
